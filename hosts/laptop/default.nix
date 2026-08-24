@@ -7,6 +7,7 @@
     ../../modules/desktop/services.nix
   ];
 
+  nixpkgs.config.allowUnfree = true;
   time.timeZone = "Europe/Budapest";
 
   users.users.shina = {
@@ -19,7 +20,6 @@
   networking.hostName = "laptop";
 
   services.openssh.enable = true;
-  services.tlp.enable = true;
 
   system.stateVersion = "24.11";
 }

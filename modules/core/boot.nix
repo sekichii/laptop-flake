@@ -4,11 +4,6 @@
 {
 	boot.kernelPackages = pkgs.linuxPackages_latest;
 
-	boot.microcode = {
-		enable = true;
-		package = pkgs.intel-microcode;
-	};
-
 	boot.loader.grub = {
 		enable = true;
 		efiSupport = true;
@@ -16,7 +11,7 @@
 		extraConfig = "GRUB_TIMEOUT=3";
 	};
 
-	boot.efi = {
+	boot.loader.efi = {
 		efiSysMountPoint = "/boot";
 		canTouchEfiVariables = true;
 	};
@@ -25,12 +20,6 @@
 
 	boot.initrd.kernelModules = [
 		"i915"
-		"drm"
-		"drm_kms_helper"
-		"nvidia"
-		"nvidia_modeset"
-		"nvidia_uvm"
-		"nvidia_drm"
 	];
 
 	boot.extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.stable ];

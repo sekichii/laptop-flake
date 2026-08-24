@@ -17,7 +17,7 @@
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
     noto-fonts
-    noto-fonts-emoji
+    noto-fonts-color-emoji
   ];
 
   networking.firewall.enable = true;
@@ -31,7 +31,4 @@
   ];
 
   services.fstrim.enable = true;
-  services.tlp = {
-    enable = true;
-  };
 }

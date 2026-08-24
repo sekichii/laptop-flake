@@ -22,15 +22,11 @@
             };
 
             swap = {
-              priority = 2;
-              name = "swap";
-              start = "1024M";
-              end = "8192M";
-              type = "8200";
+              size = "8G";
               content = {
                 type = "swap";
-                format = "swap";
-                mountpoint = "swap";
+                discardPolicy = "both";
+                resumeDevice = true; 
               };
             };
 
