@@ -5,7 +5,12 @@
     ../../modules/core/services.nix
     ../../modules/core/user.nix
     ../../modules/desktop/services.nix
+    ../../modules/desktop/niri.nix
+    ../../modules/desktop/audio.nix
+    ../../modules/desktop/nvidia.nix
   ];
+
+  home-manager.users.shina = import ../../home;
 
   nixpkgs.config.allowUnfree = true;
   time.timeZone = "Europe/Budapest";
