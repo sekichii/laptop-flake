@@ -1,4 +1,8 @@
 { pkgs, ... }: {
+  imports = [
+    ./packages.nix
+  ];
+
   home.username = "shina";
   home.homeDirectory = "/home/shina";
   home.stateVersion = "24.11";
