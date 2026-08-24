@@ -21,6 +21,19 @@
               };
             };
 
+            swap = {
+              priority = 2;
+              name = "swap";
+              start = "1024M";
+              end = "8192M";
+              type = "8200";
+              content = {
+                type = "swap";
+                format = "swap";
+                mountpoint = "swap";
+              };
+            };
+
             root = {
               size = "100%";
               content = {

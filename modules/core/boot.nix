@@ -12,7 +12,7 @@
 	boot.loader.grub = {
 		enable = true;
 		efiSupport = true;
-		device = "nodev"; # use EFI only
+		device = "nodev";
 		extraConfig = "GRUB_TIMEOUT=3";
 	};
 

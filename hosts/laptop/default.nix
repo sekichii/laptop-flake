@@ -17,6 +17,7 @@
     packages = with pkgs; [ git neovim fastfetch ];
   };
   networking.hostName = "laptop";
+
   services.openssh.enable = true;
   services.tlp.enable = true;
 

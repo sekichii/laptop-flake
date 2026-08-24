@@ -23,5 +23,35 @@
     eza
     bat
     jq
+
+    gcc
+    clang
+    cmake
+    ninja
+    pkg-config
+    make
+    gdb
+    lld
+
+    rustc
+    cargo
+    rustup
+    rust-analyzer
+
+    python3
+    nodejs
+    go
+    openjdk
+
+    vscode
+
+    steam
+    mangohud
+    vulkan-tools
+
+    flameshot
+    keepassxc
+    neofetch
+    polychromatic
   ];
 }
