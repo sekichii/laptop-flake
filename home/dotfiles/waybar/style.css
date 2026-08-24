@@ -1,0 +1,44 @@
+@define-color base	#1e1e2e;
+@define-color surface0	#313244;
+@define-color text	#cdd6f4;
+@define-color lavender 	#b4befe;
+@define-color mauve	#cba6f7;
+@define-color red	#f38ba8;
+
+* {
+	font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+	font-size: 13px;
+	border: none;
+	border-radius: 0;
+}
+
+window#waybar {
+	background-color: rgba(30, 30, 46, 0.85);
+	color: @text;
+}
+
+#workspaces button {
+	padding: 0 8px;
+	color: @text;
+}
+
+#workspaces button.focused {
+	color: @mauve;
+	border-bottom: 2px solid @mauve;
+}
+
+#clock, #battery, #network, #cpu, #memory {
+	background-color: @surface0;
+	padding: 4px 12px;
+	margin: 4px 2px;
+	border-radius: 8px;
+}
+
+#clock {
+	color: @lavender;
+}
+
+#custom-power {
+    margin-right: 12px;
+    padding-right: 8px;
+}
