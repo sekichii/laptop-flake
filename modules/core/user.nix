@@ -19,7 +19,7 @@
 
 	environment.variables = {
 		EDITOR = "nvim";
-		LANG = "hu_HU";
+		LANG = "en_US.UTF-8";
 	};
 }
 )
