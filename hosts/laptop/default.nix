@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   imports = [
-    ./disko.nix
+    ./hardware.nix
     ../../modules/core/boot.nix
     ../../modules/core/services.nix
     ../../modules/core/user.nix
