@@ -4,7 +4,6 @@
 {
 	boot.kernelPackages = pkgs.linuxPackages_latest;
 
-	# Microcode for Intel CPUs
 	boot.microcode = {
 		enable = true;
 		package = pkgs.intel-microcode;
@@ -23,6 +22,18 @@
 	};
   
 	boot.kernelParams = [ "quiet" ];
+
+	boot.initrd.kernelModules = [
+		"i915"
+		"drm"
+		"drm_kms_helper"
+		"nvidia"
+		"nvidia_modeset"
+		"nvidia_uvm"
+		"nvidia_drm"
+	];
+
+	boot.extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.stable ];
 	hardware.enableRedistributableFirmware = true;
 }
 
