@@ -29,7 +29,7 @@
     cmake
     ninja
     pkg-config
-    make
+    gnumake
     gdb
     lld
 
@@ -51,7 +51,7 @@
 
     flameshot
     keepassxc
-    neofetch
+    fastfetch
     polychromatic
   ];
 }
