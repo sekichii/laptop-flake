@@ -19,4 +19,19 @@
     noto-fonts
     noto-fonts-emoji
   ];
+
+  networking.firewall.enable = true;
+  networking.firewall.allowedTCPPorts = [ 22 ];
+
+  environment.systemPackages = with pkgs; [
+    htop
+    tmux
+    zsh
+    starship
+  ];
+
+  services.fstrim.enable = true;
+  services.tlp = {
+    enable = true;
+  };
 }

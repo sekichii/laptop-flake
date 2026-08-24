@@ -1,4 +1,10 @@
 { pkgs, ... }: {
+  imports = [
+    ./niri.nix
+    ./audio.nix
+    ./nvidia.nix
+  ];
+
   programs.niri.enable = true;
 
   environment.systemPackages = [
